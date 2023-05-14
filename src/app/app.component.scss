@@ -1,0 +1,22 @@
+.grid-producto  {
+  display: flex;
+  flex-direction: column;
+  div {
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    h2, p {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .grid-producto {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-gap: 15px;
+    }
+}
